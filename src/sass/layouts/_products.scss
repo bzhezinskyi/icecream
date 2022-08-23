@@ -1,0 +1,300 @@
+.title {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: 'Titan One', sans-serif;
+  color: #d41443;
+
+  margin-bottom: 0px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 48px;
+  }
+}
+
+.products {
+  &__title-wrap {
+    text-align: center;
+
+    margin-bottom: 162px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 281px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 158px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+
+    // width: calc(100% - 70px * 2);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 160px 53px 40px 53px;
+
+    border-radius: 24px;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 32px * 2) / 3);
+      margin: 16px;
+      padding: 165px 64px 60px 64px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 16px * 2) / 3);
+      margin: 8px;
+      padding: 118px 25px 40px 25px;
+    }
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-top: -70px;
+    margin-bottom: -70px;
+
+    @media screen and (min-width: 1200px) {
+      margin: -16px;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: -8px;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: 'Titan One', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 1.14;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-family: 'DM Sans';
+    color: #ffffff;
+
+    margin-bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      line-height: 1.79;
+    }
+  }
+  &__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 32px auto 0 auto;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+      margin: 60px auto 0 auto;
+    }
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.products__item-cream {
+  background-color: #ffb8ca;
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -140px;
+
+    display: block;
+    width: 100%;
+    height: 280px;
+
+    background-image: url(/src/images/products/product-1-320@1x.png);
+    background-size: 280px 280px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 1200px) {
+      height: 384px;
+
+      top: -261px;
+
+      background-image: url(/src/images/products/product-1-1200@1x.png);
+      background-size: 368px 384px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: -138px;
+      height: 224px;
+
+      background-image: url(/src/images/products/product-1-768@1x.png);
+      background-size: 224px 224px;
+    }
+  }
+}
+
+.products__item-coffee {
+  background-color: #f0d1a5;
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -140px;
+
+    display: block;
+    width: 100%;
+    height: 280px;
+
+    background-image: url(/src/images/products/product-2-320@1x.png);
+    background-size: 280px 280px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 1200px) {
+      height: 384px;
+
+      top: -261px;
+
+      background-image: url(/src/images/products/product-2-1200@1x.png);
+      background-size: 368px 384px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: -138px;
+      height: 224px;
+
+      background-image: url(/src/images/products/product-2-768@1x.png);
+      background-size: 224px 224px;
+    }
+  }
+}
+
+.products__item-milkshakes {
+  background-color: #c2e297;
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -140px;
+
+    display: block;
+    width: 100%;
+    height: 280px;
+
+    background-image: url(/src/images/products/product-3-320@1x.png);
+    background-size: 280px 280px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 1200px) {
+      height: 384px;
+
+      top: -261px;
+
+      background-image: url(/src/images/products/product-3-1200@1x.png);
+      background-size: 368px 384px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: -138px;
+      height: 224px;
+
+      background-image: url(/src/images/products/product-3-768@1x.png);
+      background-size: 224px 224px;
+    }
+  }
+}
+
+.products__title::after {
+  content: '...';
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 22px;
+  padding: 32px 0 32px 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 70%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+.dropdown-content p {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.milkshakes {
+  background-color: #b0da7a;
+}
+
+.coffee {
+  background-color: #ecc48b;
+}
+
+.cream {
+  background-color: #fc9cb4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
